@@ -4,7 +4,7 @@ FROM arm64v8/alpine:3.11
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 
 # install dependencies
-RUN apk add chromium qpdf nodejs npm fontconfig
+RUN apk add chromium qpdf nodejs npm fontconfig jdk8
 
 # add chinese front
 ADD wqy-zenhei.ttf /usr/share/fonts
